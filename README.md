@@ -1,0 +1,2 @@
+# Rails-bookstore
+We need to be able to add new products. Each one of them will have a price, a name and a description In the main page we will show the newest products we've added The visitors can review products assigning them 1 to 5 stars We need to have a front page with a search box. We need to be able to search products using the same text box by name or description. The results will be ordered from the one with the better average rating to the worst We will have a detail page for each product where we can see al reviews or add a new review.
