@@ -56,7 +56,15 @@ scelerisque vulputate metus at lacinia. Vestibulum ante ipsum primis in
 ".split("\n").join(' ')
 
 
+
 (1..50).each do |i|
-	
-	
-end
+		book = Book.create title: "Book #{i}", description: "this the #{i}'s book description",
+		price: rand(1..40),  date: DateTime.now
+
+		if(i % 2 == 0)
+			rand(1...10).times do 
+				book.reviews.create(review: big_string[0...rand(30..200)], rating: rand(1...5))
+			end
+		end
+
+end 

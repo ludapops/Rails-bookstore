@@ -1,0 +1,16 @@
+<h1>Books#index</h1>
+
+
+
+
+<ul>
+	<% @books.each do |book| %>
+		<li> Title : <%= book.title%> --  Descritpion : <%=book.description%> -- Price 
+			<%=book.price%>----- 
+			<%= link_to('Reviews', book_reviews_path(book.id))%>
+		</li>		
+	<%end%>
+	
+</ul>
+
+
